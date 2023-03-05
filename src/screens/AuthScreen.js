@@ -1,14 +1,14 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 const myImg = require('../../assets/1.png')
-export default function AuthScreen() {
+export default function AuthScreen({onAuthenticate}) {
   return (
     <View>
  <Image source={myImg} style={styles.image} />
  <Text style={styles.title}>EXPENIO</Text>
  <Text style={styles.description}>Going cashless has been never been this easier</Text>
    <TouchableOpacity
-    // onPress={onAuthenticate}
+     onPress={onAuthenticate}
     style={styles.btn}
    >
     <Text style={styles.text}> Login</Text>
